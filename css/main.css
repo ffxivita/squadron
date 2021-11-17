@@ -1,0 +1,764 @@
+html { 
+	margin-left: calc(100vw - 100%);
+	margin-right: 0;
+}
+
+body {
+	width: 100%;
+	min-width: 1150px;
+    height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Verdana;
+}
+
+input[type="text"], select {
+	outline: none;
+	border: 1px solid #aaa;
+}
+
+select {
+	cursor: pointer;
+	height: 25px;
+}
+
+input { 
+	height: 19px;
+}
+
+input[type=button] {
+	cursor: pointer;
+	height: 25px;
+}
+
+input[type=text] {
+	padding: 2px 1px;
+}
+
+.clear {
+	clear: both;
+}
+
+#menu {
+	width: calc(100% + 17px);
+	height: 30px;
+	margin-left: -17px;
+	background: #000;
+	border-bottom: 1px solid #ccc;
+	opacity: 0.8;
+	color: #ddd;
+	line-height: 30px;
+}
+
+#menu #content-menu {
+	width: 1150px;
+	margin: 0 auto;
+	padding-left: 17px;
+}
+
+#menu a, #menu a:active, #menu a:visited {
+	color: #ddd;
+	text-decoration: none;
+}
+
+#menu a:hover, #menu a.active {
+	text-shadow: 1px 1px 2px #aaa, -1px -1px 2px #aaa;
+	color: #fff;
+}
+
+#menu #content-menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#menu #content-menu li {
+	display: inline-block;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+#menu #content-menu ul#squadrons-list {
+	float: left;
+}
+
+#menu #content-menu ul#squadrons-list li {
+	margin-right: 20px;
+}
+
+#menu #content-menu ul#tools {
+	float: right;
+}
+
+#menu #content-menu ul#tools li {
+	margin-left: 20px;
+}
+
+#title {
+	width: 600px;
+	height: 150px;
+	background: url(../img/title.png?1) no-repeat; 
+	margin: 30px 0;
+	display: inline-block;
+}
+
+#footer {
+	text-align: center;
+	font-size: 0.6em;
+	margin: 10px 0 5px 0;
+}
+
+#footer p {
+	margin: 0;
+}
+
+#top-announcement {
+	border: 3px solid /*#19098e*/#8b0000;
+    color: #8b0000;
+   /*color: #19098e;*/
+    padding: 12px;
+    display: inline-block;
+    margin: 26px 0 0 40px;
+    vertical-align: top;
+    max-width: 690px;
+    text-align: justify;
+	width: 100%;
+	font-size: 0.8em;
+	top: -10px;
+	position: relative;
+}
+
+#top-announcement p {
+	margin: 0;
+}
+
+#content {
+	width: 1150px;
+	margin: 0 auto;
+}
+
+#content-left {
+	width: 575px;
+	float: left;
+}
+
+#content-right {
+	width: 575px;
+	float: right;
+}
+
+#title-category {
+	position: relative;
+	width: 100%; 
+	height: 28px;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	color: #615850;
+	margin-bottom: 20px;
+}
+
+#title-category::after {
+	content: " ";
+	margin-top: 10px;
+	display:block;
+	width: 100%;
+	height: 2px;
+	background-color: #615850;
+}
+
+#squadron {
+	width: 550px;
+	margin-bottom: 30px;
+	clear: both;
+}
+
+#squadron .recruit-number {
+	display: inline-block;
+	font-size: 0.9em;
+	cursor: pointer;
+}
+
+#squadron select {
+	margin-bottom: 2px;
+}
+
+#squadron select.recruit { 
+	width: 110px; 
+}
+
+#squadron select.level-recruit { 
+	width: 40px; 
+}
+
+#squadron select.race-recruit { 
+	width: 95px; 
+}
+
+#squadron select.name-recruit { 
+	width: 95px; 
+}
+
+#squadron .exp-recruit {
+	width: 50px; 
+}
+
+#squadron .exp-needed-recruit {
+	font-size: 0.85em;
+	width: 45px;
+	display: inline-block;
+}
+
+#squadron .image-chemistry {
+	display: inline-block;
+	width: 15px;
+	background: url(../img/chemistry_01.png);
+	height: 21px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#squadron .image-chemistry.active {
+	background: url(../img/chemistry_02.png);
+}
+
+input[type=checkbox] {
+	padding: 0;
+	display: inline-block;
+	vertical-align:middle;
+	cursor: pointer;
+}
+
+#training {
+	width: 550px;
+	margin-bottom: 20px;
+}
+
+.icon {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	vertical-align: top;
+	margin-right: 4px;
+	background-size: 25px 25px;
+}
+
+.icon-phy-mini {
+	background-image: url(../img/1.png);
+}
+
+.icon-men-mini {
+	background-image: url(../img/2.png);
+}
+
+.icon-tac-mini {
+	background-image: url(../img/3.png);
+}
+
+#training #squadron-bonus input {
+	width: 40px;
+	margin-right: 10px;
+}
+
+#training #squadron-rank, #training #select-squadron-rank {
+	display: inline-block;
+	font-size: 0.9em;
+}
+
+#mission-prerequisites {
+	width: 550px;
+	float:left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#mission-prerequisites input[type=text] {
+	width: 40px;
+	margin-right: 10px;
+}
+
+#mission-prerequisites input[type=button] {
+	width: 100px;
+}
+
+#results {
+	width: 550px;
+	float:right;
+	clear: both;	
+}
+
+#how-to-use {
+	font-size:0.8em;
+	text-align: justify;
+}
+
+#how-to-use .important {
+	font-weight: bold;
+}
+
+#return #not-possible {
+	font-weight: bold;
+	color: #c61515;
+	margin-bottom: 18px;
+	text-align: justify;
+}
+
+#return .result-line {
+	margin-bottom: 18px;
+	font-size: 0.8em;
+}
+
+#return .result-line + .result-line {
+	margin-top: 18px;
+}
+
+#return .result-line .img {
+	display: inline-block;
+	width: 32px;
+	text-align: center;
+	vertical-align:top;
+	margin: 0 2px 13px 0;
+}
+
+#return .result-line:not(:last-child)::after {
+	content: " ";
+	display:block;
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: #615850;
+	top: 2px;
+}
+
+#return .stats-and-training, .squadron {
+	display: inline-block;
+	vertical-align:top;
+}
+
+#return .squadron .title-stat {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#return .stats-and-training .title-stat {
+	width: 100px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#return .stats, #return .chemistries, #return .training  {
+	width: 100%;
+	margin-left: 15px;
+}
+
+#return .stats > div, #return .chemistries > div, #return .training > div {
+	display: inline-block;
+}
+
+#return .stats span {
+	margin-right: 10px;
+}
+
+#return .stats .n-stat {
+	display:inline-block;
+	margin-right: 5px;
+}
+
+#return .training img {
+	width: 32px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+#return .chemistries .val-chem {
+	display: inline-block;
+	line-height: 32px;
+    margin-left: 2px;
+	margin-right: 3px;
+}
+
+#return .chemistries > div:nth-child(5) .val-chem {
+	margin-right: 0;
+}
+
+#return .chemistries .img-chem {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#return .stats .img-chem img {
+	width: 32px;
+}
+
+span.green {
+	color: #1a9e1f;
+}
+
+span.red {
+	color: #c61515;
+}
+
+#training-list {
+	margin-top: 20px;
+}
+
+.training-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border: 2px solid #615850;
+	margin-right: 6px;
+	cursor: pointer;
+}
+
+.training-icon.active:before {
+  background-color: green;  
+}
+
+#training-list #training-1 {
+	background: url(../img/1.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-2 {
+	background: url(../img/2.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-3 {
+	background: url(../img/3.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-4 {
+	background: url(../img/4.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-5 {
+	background: url(../img/5.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-6 {
+	background: url(../img/6.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#training-list #training-7 {
+	background: url(../img/7.png), #766b61;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.training-icon.active {
+	border: 2px solid #000;
+}
+
+#training-list #training-1.active, #training-list #training-2.active, #training-list #training-3.active, #training-list #training-4.active, #training-list #training-5.active, #training-list #training-6.active, #training-list #training-7.active {
+	background-color: #3e3833;
+}
+
+#apply-training {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#apply-training input {
+	width: 100px;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+
+#mission-exp-reward {
+	margin-top: 20px;
+}
+
+#mission-exp-reward #select-classes-exp {
+	display: inline-block;
+	width: 150px;
+	height: 68px;
+}
+
+#mission-exp-reward #select-classes-exp img {
+	cursor: pointer;
+	margin: 0 4px 0 0;
+	opacity: 0.5;
+}
+
+#mission-exp-reward #select-classes-exp img.active {
+	opacity: 1;
+}
+
+#mission-exp-reward #mission-experience-reward {
+	display: inline-block;
+	width: 258px;
+	height: 68px; 
+	line-height: 33px;
+	text-align: right;
+	vertical-align: top;
+	font-size: 0.9em;
+}
+
+#mission-exp-reward input {
+	width: 60px;
+}
+
+#mission-exp-reward div:last-child {
+	display: inline-block;
+	height: 68px; 
+	line-height: 68px;
+	vertical-align: top;
+}
+
+#mission-exp-reward div:last-child input {
+	width:100px;
+	height:25px;
+	margin: 0 0 4px 4px;
+	cursor: pointer;
+}
+
+#nb-max-trainings { 
+	margin:2px 0 10px 0;
+}
+
+#nb-max-trainings div#input-nb {
+	display: inline-block;
+	font-size: 0.9em;
+	width: 75%;
+}
+
+#mission-prerequisites .title-mission {
+	display: inline-block;
+	font-size: 0.9em;
+	width: 130px;
+	height: 27px;
+}
+
+#mission-bonus select.mission-bonus { 
+	width: 120px;	
+}
+
+#windows {
+	position: absolute;
+	display: table;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 20;
+}
+
+.title-window {
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	background: #615850;
+	font-size: 0.9em;
+	margin-bottom: 10px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #eee;
+}
+
+.line-window {
+	height: 27px;
+}
+
+.title-line-window {
+	width: 120px;
+	display: inline-block;
+	font-size: 0.9em;
+}
+
+.content-line-window {
+	width: 340px;
+	display: inline-block;
+}
+
+#c-window-export, #c-window-import, #c-window-chemistry, #c-window-rename, #c-window-clear {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#window-export, #window-import, #window-chemistry, #window-rename, #window-clear {
+	width: 470px;
+	background: url(../img/bg.png) repeat;
+	border:4px solid #615850;
+	padding:20px;
+    margin: 0 auto;
+}
+
+#window-chemistry select, #window-chemistry input, #window-rename input  {
+	width: 100%;
+}
+
+#window-rename input[type="text"]  {
+	margin-left: 6px;
+	width: calc(100% - 4px)
+}
+
+#window-export #export-explanation,  #window-import #import-explanation, #window-clear #clear-explanation {
+	text-align: justify;
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+#window-import input {
+	margin-top: 10px;
+	width: 100px;
+}
+
+#window-clear input {
+	width: 100px;
+}
+
+textarea {
+	height: 98px;
+	width: 462px;
+	resize: none;
+}
+
+#processed {
+	position: absolute;
+    display: block;
+    right: 0;
+	top: 0;
+	text-align: right;
+}
+
+#calc-in-progress {
+	margin-bottom: 18px;
+	font-weight: bold;
+	color: #c61515;
+	text-align: justify;
+}
+
+#window-chemistry #bonus-chemistry { 
+	display: inline-block;
+	width: 70%;
+}
+
+#window-chemistry #chk_all {
+	font-size: 0.9em;
+	display: inline-block;
+	width: 28%;
+	text-align: right;
+}
+
+#window-chemistry #chk_all div {
+	display: inline-block;
+}
+
+#window-chemistry #chk_all input {
+	margin: 0;
+	width: auto;
+	vertical-align: top;
+}
+
+#explanation-max-trainings {
+	position: relative;
+	width: 85%;
+    display: inline-block;
+    font-size: 0.7em;
+    vertical-align: bottom;
+	top: -1px;
+}
+
+#progress {
+	width: 80%;
+    height: 10px;
+    margin: 0 auto;
+	border: 1px solid #fff;
+	radius: 2px;
+}
+
+#progress-bar {
+	height:100%;
+	width: 0;
+	background: #123456;
+}
+
+.chemistry {
+	color: #577f96;
+}
+
+#window-chemistry input[type=radio] { 
+	width: auto;
+	margin: 0;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+label {
+	margin-right: 10px;
+    margin-left: 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+
+#overlay {
+	background: rgba(0,0,0,0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+#overlay #message-esper, #overlay #message-cookie {
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	width:70%;
+	margin:0 auto;
+	line-height: 2em;
+	font-size: 1em;
+	padding: 10px;
+}
+
+#overlay #overlay-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#overlay #message-esper {
+	margin-bottom: 2vh;
+}
+
+#overlay #message-cookie {
+	margin-top: 2vh;
+}
+
+#overlay #close-button {
+	position: relative;
+	margin: 2vh auto 0;
+	width: 10%;	
+}
+
+#overlay #close-message {
+	font-size: 1.5em;
+	padding: 5px;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.missing-data {
+	background-color: #e27070;
+}
+
+.excluded {
+	background-color: #f7f571;
+}
